@@ -1,0 +1,172 @@
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    z-index:-100;
+    background-size: cover;
+}
+
+#doodle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.text {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 5vw;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+}
+
+#downIcon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6%;
+    animation: downAnimation 3s infinite  ;
+}
+
+@keyframes downAnimation {
+    0%{
+        margin-top: 1.5%;
+    }
+    50%{
+        margin-top: 3.5%;
+    }
+    100%{
+        margin-top: 1.5%;
+    }
+}
+
+.content{
+    position: absolute;
+    top: 50vw;
+    left:0;
+    background-color: #fff;
+    padding: 2vw 1.5vw;
+    /* applying font */
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(227, 237, 255);
+    text-align: justify;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main > img{
+    width: 45vw;
+    height: 25vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px rgb(152, 152, 152);
+    margin-left: 3vw;
+}
+
+@media only screen and (max-width:800px) {
+    .main{
+        display: block;
+    }
+    .main > img{
+        display: block;
+        width: 80%;
+        height: 80%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#text > h1{
+    text-align: center;
+}
+
+#uniName{
+    color:#d01c14;
+}
+
+.footer{
+    background-color: #fff;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    padding:2vw 4vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#gdscFooterlogo{
+    width: 10vw;
+}
+
+.footer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3vw;
+}
+
+a > img{
+    width: 2vw;
+    margin: 0.5vw 0;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+}
+
+a:visited,a{
+    color:grey;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+.themeBar{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#darkbtn,#lightbtn{
+    height:35px;
+    border-radius: 7px;
+    border:0.2px solid black;
+    margin-bottom: 2%;
+}
+
+#darkbtn{
+    background-color: #dbdbdb;
+}
+
+#darkbtn:hover{
+    background-color: #fff;
+}
+
+#lightbtn{
+    background-color: #282828;
+    border-color: #fff;
+    display: none;
+}
